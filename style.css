@@ -1,0 +1,169 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --greyish:#999;
+    --white:#fff;
+    --lightgrey:#d3d3d3;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.col-6 {
+    width: 60%;
+}
+
+.bg-img {
+    background: linear-gradient(0deg, rgba(160, 112, 224, 0.6), rgba(160, 112, 224, 0.6)), url(img/wp4641205.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+}
+
+.wrapper {
+    color: var(--white);
+    padding: 30px;
+}
+
+.contact-sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 1px solid var(--greyish);
+}
+
+.col-4 {
+    width: 40%;
+}
+
+.form-wrapper {
+    padding: 30px;
+}
+
+.form-header {
+    color: var(--greyish);
+    text-align: center;
+}
+
+.form-logo {
+    max-width: 150px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 30%;
+    padding: 10px;
+    background-color: var(--lightgrey);
+    border-radius: 3px;
+    border: 1px solid var(--lightgrey);
+}
+
+.forgot-pass {
+    text-decoration: none;
+    color: #000;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login{
+    text-align: center;
+}
+.btn {
+    padding: 10px 40px;
+    background-color: #873BDB;
+    color: var(--white);
+    border-radius: 20px;
+    border: none;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+.social-item {
+    padding: 10px;
+}
+
+.social-icon1,
+.social-icon2,
+.social-icon3,
+.social-icon4 {
+    padding: 10px;
+    color: var(--white);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-icon1 {
+    background-color: #3B5396;
+}
+
+.social-icon2 {
+    background-color: #14A4FA;
+}
+
+.social-icon3 {
+    background-color: #DA3D3B;
+}
+
+.social-icon4 {
+    background-color: #0A7AB0;
+}
+
+.note {
+    color: var(--greyish);
+    text-align: center;
+}
+.number{
+    margin: 5px;
+}
+@media only screen and (min-width: 768px)and (max-width: 1023px) {
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .col-4{
+        width: 100%;
+    }
+    .col-6{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .col-4{
+        width: 100%;
+    }
+    .col-6{
+        width: 100%;
+    }
+}
